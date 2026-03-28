@@ -31,6 +31,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -76,7 +77,7 @@ fun BusinessCard(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Sam Wilson",
+            text = stringResource(R.string.Full_name),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold,
             color = Color(0xFF00008B),
@@ -86,7 +87,7 @@ fun BusinessCard(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(8.dp))
 
         Text(
-            text = "Student",
+            text = stringResource(R.string.Title),
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium,
             color = Color.DarkGray,
@@ -98,19 +99,19 @@ fun BusinessCard(modifier: Modifier = Modifier) {
         Column {
             ContactInfoRow(
                 icon = Icons.Default.Phone,
-                text = "+7 (999) 999-99-99"
+                text = stringResource(R.string.Phone_number)
             )
 
             ContactInfoRow(
                 icon = Icons.Default.Person,
-                text = "@sam"
+                text = stringResource(R.string.Social)
             )
 
             ContactInfoRow(
                 icon = Icons.Default.Email,
-                text = "sam@example.com"
+                text = stringResource(R.string.Email)
             )
-            Spacer(modifier = Modifier.height(40.dp))
+            Spacer(modifier = Modifier.height(32.dp))
         }
     }
 }

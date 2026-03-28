@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">business card</string>
+    <string name="Full_name">Sam Wilson</string>
+    <string name="Title">Student</string>
+    <string name="Phone_number">+7 (999) 999-99-99</string>
+    <string name="Social">\@sam</string>
+    <string name="Email">sam@example.com</string>
 </resources>
