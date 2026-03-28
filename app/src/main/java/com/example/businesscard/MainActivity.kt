@@ -59,7 +59,7 @@ class MainActivity : ComponentActivity() {
 fun BusinessCard(modifier: Modifier = Modifier) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
+        verticalArrangement = Arrangement.Bottom,
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
@@ -93,22 +93,25 @@ fun BusinessCard(modifier: Modifier = Modifier) {
             textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(32.dp))
+        Spacer(modifier = Modifier.height(250.dp))
 
-        ContactInfoRow(
-            icon = Icons.Default.Phone,
-            text = "+7 (999) 999-99-99"
-        )
+        Column {
+            ContactInfoRow(
+                icon = Icons.Default.Phone,
+                text = "+7 (999) 999-99-99"
+            )
 
-        ContactInfoRow(
-            icon = Icons.Default.Person,
-            text = "@sam"
-        )
+            ContactInfoRow(
+                icon = Icons.Default.Person,
+                text = "@sam"
+            )
 
-        ContactInfoRow(
-            icon = Icons.Default.Email,
-            text = "sam@example.com"
-        )
+            ContactInfoRow(
+                icon = Icons.Default.Email,
+                text = "sam@example.com"
+            )
+            Spacer(modifier = Modifier.height(40.dp))
+        }
     }
 }
 
